@@ -6,7 +6,7 @@
 #    By: kizuna <kizuna@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/25 16:01:05 by kizuna            #+#    #+#              #
-#    Updated: 2025/01/25 16:01:08 by kizuna           ###   ########.fr        #
+#    Updated: 2025/01/25 16:12:06 by kizuna           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libft.a
 
 CC = cc
 
-CFLAGS = -Wall -Wextra -Werror -I./
+CFLAGS = -Wall -Wextra -Werror -I../include
 
 SRCS_DIR = src/
 FT_IS_DIR = $(SRCS_DIR)ft_is/

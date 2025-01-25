@@ -6,7 +6,7 @@
 #    By: kizuna <kizuna@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/25 16:03:38 by kizuna            #+#    #+#              #
-#    Updated: 2025/01/25 16:03:39 by kizuna           ###   ########.fr        #
+#    Updated: 2025/01/25 16:12:28 by kizuna           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libftprintf.a
 LIBFT = libft/libft.a
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -I. -I./libft
+CFLAGS = -Wall -Wextra -Werror -I./include
 
 SRCS_DIR = src/
 SRCS = $(SRCS_DIR)ft_printf.c \
