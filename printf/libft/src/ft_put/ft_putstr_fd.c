@@ -6,11 +6,11 @@
 /*   By: kizuna <kizuna@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 00:48:24 by kizuna            #+#    #+#             */
-/*   Updated: 2025/01/25 16:56:00 by kizuna           ###   ########.fr       */
+/*   Updated: 2025/01/25 17:05:26 by kizuna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

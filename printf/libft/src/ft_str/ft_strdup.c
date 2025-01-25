@@ -6,11 +6,11 @@
 /*   By: kizuna <kizuna@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/01 20:07:43 by kizuna            #+#    #+#             */
-/*   Updated: 2025/01/25 16:56:08 by kizuna           ###   ########.fr       */
+/*   Updated: 2025/01/25 17:05:26 by kizuna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 char	*ft_strdup(const char *s1)
 	{

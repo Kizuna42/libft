@@ -6,11 +6,11 @@
 /*   By: kizuna <kizuna@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 00:20:56 by kizuna            #+#    #+#             */
-/*   Updated: 2025/01/25 16:55:19 by kizuna           ###   ########.fr       */
+/*   Updated: 2025/01/25 17:05:26 by kizuna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

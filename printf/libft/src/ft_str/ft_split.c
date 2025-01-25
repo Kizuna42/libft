@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kishino <kishino@student.42.fr>            +#+  +:+       +#+        */
+/*   By: kizuna <kizuna@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 00:42:18 by kizuna            #+#    #+#             */
-/*   Updated: 2024/12/03 13:28:35 by kishino          ###   ########.fr       */
+/*   Updated: 2025/01/25 17:05:26 by kizuna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 static size_t	ft_countword(char const *s, char c)
 {
