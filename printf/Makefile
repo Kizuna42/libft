@@ -6,7 +6,7 @@
 #    By: kizuna <kizuna@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/25 16:03:38 by kizuna            #+#    #+#              #
-#    Updated: 2025/01/25 16:12:28 by kizuna           ###   ########.fr        #
+#    Updated: 2025/01/25 16:20:03 by kizuna           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,12 +18,12 @@ CFLAGS = -Wall -Wextra -Werror -I./include
 
 SRCS_DIR = src/
 SRCS = $(SRCS_DIR)ft_printf.c \
-       $(SRCS_DIR)ft_print_char.c \
-       $(SRCS_DIR)ft_print_str.c \
-       $(SRCS_DIR)ft_print_ptr.c \
-       $(SRCS_DIR)ft_print_nbr.c \
-       $(SRCS_DIR)ft_print_unsigned.c \
-       $(SRCS_DIR)ft_print_hex.c
+        $(SRCS_DIR)ft_print_char.c \
+        $(SRCS_DIR)ft_print_str.c \
+        $(SRCS_DIR)ft_print_ptr.c \
+        $(SRCS_DIR)ft_print_nbr.c \
+        $(SRCS_DIR)ft_print_unsigned.c \
+        $(SRCS_DIR)ft_print_hex.c
 
 OBJS = $(SRCS:.c=.o)
 
@@ -33,8 +33,9 @@ $(LIBFT):
 	$(MAKE) -C libft
 
 $(NAME): $(LIBFT) $(OBJS)
-	cp $(LIBFT) $(NAME)
-	ar rcs $(NAME) $(OBJS)
+	ar x $(LIBFT)
+	ar rcs $(NAME) *.o $(OBJS)
+	rm -f *.o
 
 clean:
 	$(MAKE) -C libft clean

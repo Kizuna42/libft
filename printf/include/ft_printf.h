@@ -6,16 +6,14 @@
 /*   By: kizuna <kizuna@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/25 16:02:10 by kizuna            #+#    #+#             */
-/*   Updated: 2025/01/25 16:02:12 by kizuna           ###   ########.fr       */
+/*   Updated: 2025/01/25 16:49:07 by kizuna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 #define FT_PRINTF_H
 
-#include <stdarg.h>
-#include <unistd.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int ft_printf(const char *format, ...);
 int ft_print_char(char c);

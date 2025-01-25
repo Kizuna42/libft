@@ -6,11 +6,11 @@
 /*   By: kizuna <kizuna@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 15:01:34 by kishino           #+#    #+#             */
-/*   Updated: 2024/11/21 00:30:21 by kizuna           ###   ########.fr       */
+/*   Updated: 2025/01/25 16:50:59 by kizuna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {
@@ -24,7 +24,7 @@ int	ft_atoi(const char *nptr)
 	while (nptr[i] == ' ' || nptr[i] == '\n'
 		|| nptr[i] == '\v' || nptr[i] == '\f'
 		|| nptr[i] == '\r' || nptr[i] == '\t')
-			i++;
+		i++;
 	if (nptr[i] == '+' || nptr[i] == '-')
 	{
 		if (nptr[i] == '-')

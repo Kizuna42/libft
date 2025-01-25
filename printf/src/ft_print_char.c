@@ -6,15 +6,14 @@
 /*   By: kizuna <kizuna@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/25 16:02:24 by kizuna            #+#    #+#             */
-/*   Updated: 2025/01/25 16:02:26 by kizuna           ###   ########.fr       */
+/*   Updated: 2025/01/25 16:30:00 by kizuna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "libft.h"
 
-int ft_print_char(char c)
+int	ft_print_char(char c)
 {
-    ft_putchar_fd(c, 1);
-    return (1);
+	write(1, &c, 1);
+	return (1);
 }
