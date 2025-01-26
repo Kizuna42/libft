@@ -6,11 +6,11 @@
 /*   By: kizuna <kizuna@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/25 16:02:53 by kizuna            #+#    #+#             */
-/*   Updated: 2025/01/25 17:08:29 by kizuna           ###   ########.fr       */
+/*   Updated: 2025/01/26 17:28:05 by kizuna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../include/ft_printf.h"
 #include "../include/libft.h"
 
 static int	ft_ptr_len(unsigned long long num)
