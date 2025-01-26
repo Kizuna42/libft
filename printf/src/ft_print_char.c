@@ -6,11 +6,11 @@
 /*   By: kizuna <kizuna@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/25 16:02:24 by kizuna            #+#    #+#             */
-/*   Updated: 2025/01/26 17:28:05 by kizuna           ###   ########.fr       */
+/*   Updated: 2025/01/26 17:49:22 by kizuna           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/ft_printf.h"
+#include "ft_printf.h"
 
 int	ft_print_char(char c)
 {
