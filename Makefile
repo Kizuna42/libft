@@ -74,6 +74,9 @@ BONUS_OBJS = $(BONUS:.c=.o)
 
 all: $(NAME)
 
+%.o: %.c libft.h
+	$(CC) $(CFLAGS) -c $< -o $@
+
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
