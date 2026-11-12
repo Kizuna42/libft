@@ -49,30 +49,41 @@ static size_t	get_word_len(const char *s, char c)
 	return (len);
 }
 
-char	**ft_split(char const *s, char c)
+static char	**fill_words(char **lst, char const *s, char c)
 {
-	char	**lst;
 	size_t	word_len;
 	int		i;
 
-	lst = (char **)malloc((ft_countword(s, c) + 1) * sizeof(char *));
-	if (!lst)
-		return (0);
 	i = 0;
 	while (*s)
 	{
-		while (*s == c && *s)
+		while (*s && *s == c)
 			s++;
 		if (*s)
 		{
 			word_len = get_word_len(s, c);
 			lst[i] = ft_substr(s, 0, word_len);
 			if (!lst[i])
-				free_lst(lst, i - 1);
+			{
+				free_lst(lst, i);
+				return (NULL);
+			}
 			i++;
 			s += word_len;
 		}
 	}
 	lst[i] = NULL;
 	return (lst);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**lst;
+
+	if (!s)
+		return (NULL);
+	lst = (char **)malloc((ft_countword(s, c) + 1) * sizeof(char *));
+	if (!lst)
+		return (NULL);
+	return (fill_words(lst, s, c));
 }
