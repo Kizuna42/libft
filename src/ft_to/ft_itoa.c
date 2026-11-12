@@ -42,7 +42,7 @@ char	*ft_itoa(int n)
 	if (n < 0)
 	{
 		string[0] = '-';
-		number = -n;
+		number = -(unsigned int)n;
 	}
 	else
 		number = n;

@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	neg;
-	int	num;
+	int		i;
+	int		neg;
+	long	num;
 
 	i = 0;
 	num = 0;
@@ -36,22 +36,5 @@ int	ft_atoi(const char *nptr)
 		num = num * 10 + (nptr[i] - '0');
 		i++;
 	}
-	return (num * neg);
+	return ((int)(num * neg));
 }
-
-// #include <stdio.h>
-
-// int main(void)
-// {
-// 	int i;
-// 	char *s;
-
-// 	s = " 		-9885";
-// 	i = ft_atoi(s);
-// 	printf("i = %d\n",i);
-// }
-
-/*******************  Output should be similar to:  ***************
-
-i = -9885
-*/
