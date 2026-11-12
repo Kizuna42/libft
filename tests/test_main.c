@@ -113,6 +113,25 @@ static void	test_str_basic(void)
 	CHECK(ft_strnstr(s, "lo", 4) == NULL);
 }
 
+/* Bounded functions must not read past n/len bytes (non-NUL-terminated
+** heap buffers let ASan catch any out-of-bounds read). */
+static void	test_bounded_reads(void)
+{
+	char	*h;
+
+	h = malloc(5);
+	if (!h)
+		return ;
+	memcpy(h, "hello", 5);
+	CHECK(ft_strnstr(h, "xyz", 5) == NULL);
+	CHECK(ft_strnstr(h, "llo", 5) == h + 2);
+	CHECK(ft_strnstr(h, "lloz", 5) == NULL);
+	CHECK(ft_strncmp(h, "hello", 5) == 0);
+	CHECK(ft_memchr(h, 'z', 5) == NULL);
+	CHECK(ft_memcmp(h, "hello", 5) == 0);
+	free(h);
+}
+
 static char	upper_idx(unsigned int i, char c)
 {
 	return (i % 2 ? ft_toupper(c) : c);
@@ -258,6 +277,7 @@ int	main(void)
 	test_atoi_itoa();
 	test_mem();
 	test_str_basic();
+	test_bounded_reads();
 	test_str_alloc();
 	test_split();
 	test_put();
